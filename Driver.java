@@ -9,7 +9,7 @@ public class Driver{
 //Setting up the main method, no args
 public static void main(String[] args) {
     
-    System.out.println("I am passionate about chicken Fingers and it is very important to know basic the chicken and  where the fingers are coming from :)");
+    System.out.println("I am passionate about chicken Fingers and it is very important to know basic stats about the chicken and where the fingers are coming from :)");
 
     // Create 2 instances of your class by using the default constructor.
     Chicken_Fingers chickenone = new Chicken_Fingers();
@@ -27,29 +27,24 @@ public static void main(String[] args) {
     Chicken_Fingers chickenthree = new Chicken_Fingers("Bob", 4, 19.85);
     Chicken_Fingers chickenfour = new Chicken_Fingers("Henry", 3, 14.66);
 
-    // Creating an array to hold the chicken fingers objects 
-    Chicken_Fingers flock[];
-    flock = new Chicken_Fingers[4];
-
-    //appending each chicken object to flock array
-    flock[0] = chickenone;
-    flock[1] = chickentwo;
-    flock[2] = chickenthree;
-    flock[3] = chickenfour;
+    // Creating and assigning an  array to hold the chicken fingers attributes. 
+    Chicken_Fingers flock[] = {chickenone, chickentwo, chickenthree, chickenfour};
 
     // loop throught the array and call each objects display function
-    for (int i = 0; i < 4; ++i){
-        flock[i].display();
+    for (Chicken_Fingers i : flock){
+        i.display();
     }
 
-    System.out.println("Stats after organic feed:");
+    System.out.println("Stats after organic feeding:");
+
     //loop through the array to call each objects eat method
-    for (int i = 0; i < 4; ++i){
-        flock[i].eat(5);
+    for (Chicken_Fingers i : flock){
+        i.eat(5);
     }
-    // loop through and redisplay the objects stats again after update
-    for (int i = 0; i < 4; ++i){
-        flock[i].display();
+    
+    // loop through and redisplay the updated objects stats.
+    for (Chicken_Fingers i : flock){
+        i.display();
     }
 }
 }

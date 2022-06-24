@@ -1,6 +1,7 @@
-// Java Class II Assignment 1 
-// @author Andy Kilgore
-// @version 1.0.0
+/** Java Class II Assignment 1 
+* @author Andy Kilgore
+* @version 1.0.0
+*/
 
 //Create a class named after your favorite object in the whole world.
 public class Chicken_Fingers {

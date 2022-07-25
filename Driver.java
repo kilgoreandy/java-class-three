@@ -112,6 +112,11 @@ public class Driver{
             i.display();
         }
         System.out.println();
+        int loc;
+        String str = "The cow jumped over the moon.";
+        loc = str.lastIndexOf("ov", 14);
+
+        System.out.println(loc);
     }}
 
 
